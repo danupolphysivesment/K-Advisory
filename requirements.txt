@@ -1,0 +1,11 @@
+# Floors, not pins: Streamlit Cloud installs current versions, and the app is
+# written to run on both the pandas 1.x and pandas 2.x/3.x offset-alias and
+# Copy-on-Write behaviour (see advisor/compat.py).
+streamlit>=1.31          # st.toggle, st.query_params, column_config.ProgressColumn
+pandas>=1.5
+numpy>=1.23
+scipy>=1.9               # linprog(method="highs")
+plotly>=5.9
+openpyxl>=3.0            # reads Fund Return.xlsx
+yfinance>=0.2            # macro dashboard (optional at runtime)
+feedparser>=6.0          # news + search trends (optional at runtime)
